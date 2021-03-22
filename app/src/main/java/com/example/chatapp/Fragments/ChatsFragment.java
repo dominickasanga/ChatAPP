@@ -95,10 +95,10 @@ public class ChatsFragment extends Fragment {
                 for (DataSnapshot dataSnapshot: snapshot.getChildren()) {
                     User user = dataSnapshot.getValue(User.class);
 
-                   // mUsers.add(user);
+                   mUsers.add(user);
 
                     //display 1 user from chats
-                    for (String id : usersList) {
+               /*     for (String id : usersList) {
                         if (user.getId().equals(id)){
                             if (mUsers.size() != 0 ) {
                                 for (User user1 : mUsers) {
@@ -110,7 +110,7 @@ public class ChatsFragment extends Fragment {
                                 mUsers.add(user);
                             }
                         }
-                    }
+                    } */
                 }
 
                 userAdapter = new UserAdapter(getContext(), mUsers);
