@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+
         profile_image = findViewById(R.id.profile_image);
         username = findViewById(R.id.username);
 

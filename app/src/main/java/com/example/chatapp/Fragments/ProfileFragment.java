@@ -88,7 +88,7 @@ public class ProfileFragment extends Fragment {
 
         image_profile.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 openImage();
             }
         });
@@ -161,7 +161,7 @@ public class ProfileFragment extends Fragment {
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode,resultCode,data);
 
-        if (requestCode == IMAGE_REQUEST && requestCode == RESULT_OK
+        if (requestCode == IMAGE_REQUEST && resultCode == RESULT_OK
               && data != null && data.getData() != null) {
             imageUri = data.getData();
 
